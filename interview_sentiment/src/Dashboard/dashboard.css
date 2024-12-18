@@ -1,0 +1,116 @@
+/* UserDashboard.css */
+
+.user-dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .user-dashboard h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .user-details, .interview-history {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-details h2, .interview-history h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .user-details p {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  
+  .edit-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .edit-buttons button {
+    background-color: #001285;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-buttons button:hover {
+    background-color: #45a049;
+  }
+  
+  .interview-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .interview-table th, .interview-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .interview-table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .interview-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .interview-table a {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .interview-table a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .edit-buttons {
+      flex-direction: column;
+    }
+  
+    .interview-table {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .user-dashboard {
+      padding: 10px;
+    }
+  
+    .user-details, .interview-history {
+      padding: 15px;
+    }
+  
+    .edit-buttons button {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  
+    .interview-table th, .interview-table td {
+      padding: 8px;
+    }
+  }
+  

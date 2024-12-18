@@ -1,0 +1,135 @@
+.bioenvo{
+    color:black;
+    padding: 5%;
+    padding-top: 2%;
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    height:100%;
+
+    }
+    
+    .image,.image1{
+      background-image: url('https://i.postimg.cc/hvR79sL1/5469.jpg');
+      background-size: cover; /* Makes the image cover the entire div */
+      background-position: center; /* Centers the image */
+      width:100%;
+      height:100%;
+    }
+    .image1{
+      background-image: url('https://i.imgur.com/QyTSCeN.png');
+      border-radius: 20px;
+    }
+    .note{
+      margin-left:1%;
+      width:100%;
+      height:100%;
+      float:right;
+    }
+    @media(max-width:768px){
+      .image,.image1{
+        width:100%;
+        height:100%;
+        float:top;
+      }
+      .note{
+        margin-left:1%;
+        width:100%;
+        height:100%;
+        float:bottom;
+      }
+    }
+    ul.arrow-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    ul.arrow-list li {
+      font-size: 20px;
+      margin-left: 20px;
+      position: relative;
+    }
+    
+    ul.arrow-list li::before {
+      content: "➤";
+      position: absolute;
+      left: -20px;
+    }
+    button:focus {
+      outline: none;
+    }
+    li{
+      font-weight: 600;
+    }
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  width: 550px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Blur Effect */
+.blur {
+  filter: blur(5px);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.grid-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.domain-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.domain-button:hover {
+  background-color: #0056b3;
+}
